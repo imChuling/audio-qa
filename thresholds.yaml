@@ -1,0 +1,32 @@
+lufs:
+  min: -24.0      # target loudness window [-24, -16] LUFS
+  max: -16.0
+  warn_min: -26.0 # slightly quiet
+  warn_max: -14.0 # slightly loud
+
+snr_db:
+  min: 20.0       # SNR >= 20 dB
+  warn_min: 18.0  # borderline noisy
+  # non-tonal / no-silence material may give SNR: NA
+
+crest_db:
+  min: 3.0        # minimum crest factor
+  warn_min: 4.5   # typical program material
+  max: 22.0
+  warn_max: 20.0  # very large crest factor → warn
+
+true_peak_dbfs:
+  max: -1.0       # true peak ceiling
+  warn_max: -0.5  # close to 0 dBFS → warn
+
+lra:
+  max: 20.0       # very wide loudness range
+  warn_max: 18.0
+
+channel_imbalance_db:
+  max: 3.0        # L/R level difference (dB)
+  warn_max: 6.0   # strong imbalance
+
+lr_corr:
+  min: 0.7        # minimum L/R correlation
+  warn_min: 0.5   # very low correlation

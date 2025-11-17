@@ -1,0 +1,8 @@
+numpy
+soundfile
+pyloudnorm
+pydub
+PyYAML
+tqdm
+pytest
+# ffmpeg-python  # optional
